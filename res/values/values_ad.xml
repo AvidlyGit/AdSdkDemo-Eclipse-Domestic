@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ad_bg_color_green">#FF4CAF50</color>
+    <color name="ad_inner_color_gray_dark">#4A4A4A</color>
+    <color name="ad_inner_color_gray_light">#9B9B9B</color>
+    <color name="ad_inner_color_line">#19000000</color>
+    <color name="mobpower_videoad_transparent">#00000000</color>
+    <color name="playable_ad_translucent">#AB000000</color>
+    <string name="ad_app_key">"70f4779f0c0c42dffcb518900449a4bf"</string>
+    <string name="ad_apps_title">More Games</string>
+    <string name="ad_close_tip">Make any in-app purchase to remove ads forever</string>
+    <string name="ad_exit_free">Free</string>
+    <string name="ad_exit_game">Are you sure to exit?</string>
+    <string name="ad_exit_more">More</string>
+    <string name="ad_exit_no">No</string>
+    <string name="ad_exit_yes">Yes</string>
+    <string name="ad_gdpr_accept">Accept</string>
+    <string name="ad_gdpr_define">Define</string>
+    <string name="ad_gdpr_message">Ads are personalized. Denying would disable it.</string>
+    <string name="ad_inner_close">Close after %1$d seconds</string>
+    <string name="ad_inner_play">Play Now</string>
+    <style name="PlayableAdTranslucentStyle" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/playable_ad_translucent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="Theme.NendAd.Interstitial" parent="android:Theme.Translucent">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <style name="UpAlertDialogStyle" parent="android:Theme.DeviceDefault.Light.Dialog.MinWidth">
+        <!-- 这里设置背景为透明，为了隐藏边框 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 这里是修改顶部标题背景颜色，具体颜色自己定，可以是图片 -->
+        <item name="android:topDark">@android:color/white</item>
+        <!-- 这里是修改内容区域背景颜色 -->
+        <item name="android:centerDark">@android:color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="UpDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="mobpowerVideoDialogActivityTheme" parent="@android:style/Theme.Holo.Dialog.MinWidth">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否悬浮在activity上 -->
+        <item name="android:windowIsTranslucent">false</item><!-- 透明 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.4</item><!-- 灰度 -->
+        <item name="android:windowContentOverlay">@null</item><!-- 对话框是否有遮盖 -->
+        <item name="android:colorBackgroundCacheHint">@null</item><!-- 背景缓存颜色 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowBackground">@color/mobpower_videoad_transparent</item><!-- 背景透明 -->
+    </style>
+</resources>
