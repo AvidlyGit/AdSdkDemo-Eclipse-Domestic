@@ -6,7 +6,7 @@
     <!--单独针对国内-->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -347,6 +347,17 @@
             android:name="com.batmobi.BatMobiActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <!-- batmobi -->
+
+        <!-- display.io -->
+        <activity
+            android:name="io.display.sdk.DioActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="io.display.sdk.DioTranslucentActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="io.display.sdk.device.PermissionsHandler" />
+        <!-- display.io -->
         
         <!-- inmobi -->
         <receiver
@@ -363,6 +374,34 @@
             android:hardwareAccelerated="true"
             android:theme="@android:style/Theme.NoTitleBar"/>
         <!-- inmobi -->
+        
+        <!-- gdt -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="adam.lean.inland.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/tt_file_paths" />
+        </provider>
+        
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.qq.e.ads.ADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.qq.e.ads.PortraitADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qq.e.ads.LandscapeADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <!-- gdt -->
         
     </application>
 
