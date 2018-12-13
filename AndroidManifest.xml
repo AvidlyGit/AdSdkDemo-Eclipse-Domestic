@@ -367,12 +367,6 @@
             android:theme="@style/mobpowerVideoDialogActivityTheme" />
         <!--mobpower -->
 
-        <!-- batmobi -->
-        <activity
-            android:name="com.batmobi.BatMobiActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <!-- batmobi -->
-
         <!-- display.io -->
         <activity
             android:name="io.display.sdk.DioActivity"
