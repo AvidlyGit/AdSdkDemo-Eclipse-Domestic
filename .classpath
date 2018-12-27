@@ -5,5 +5,14 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.andmore.DEPENDENCIES"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="libs/mintegral_alphab.jar"/>
+	<classpathentry kind="lib" path="libs/mintegral_common.jar"/>
+	<classpathentry kind="lib" path="libs/mintegral_mtgdownloads.jar"/>
+	<classpathentry kind="lib" path="libs/mintegral_mtgjscommon.jar"/>
+	<classpathentry kind="lib" path="libs/mintegral_optimizedata.jar"/>
+	<classpathentry kind="lib" path="libs/mintegral_playercommon.jar"/>
+	<classpathentry kind="lib" path="libs/mintegral_reward_9.0.0.jar"/>
+	<classpathentry kind="lib" path="libs/mintegral_videocommon.jar"/>
+	<classpathentry kind="lib" path="libs/mintegral_videojs.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
