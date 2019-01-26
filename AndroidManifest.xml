@@ -91,10 +91,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.up.ads.adapter.interstitial.fbn.UPFbnInterstitialAdActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
-        <activity
             android:name="com.up.ads.adapter.interstitial.inner.UPInnerInterstitialAdActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
@@ -137,10 +133,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.avidly.ads.adapter.interstitial.fbn.FbnInterstitialAdActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity
             android:name="com.avidly.ads.adapter.interstitial.inner.InnerInterstitialAdActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
@@ -205,7 +197,7 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <!-- vungle -->
 
-        <!-- mobvista -->
+        <!-- mintegral -->
         <activity
             android:name="com.mintegral.msdk.activity.MTGCommonActivity"
             android:configChanges="keyboard|orientation"
@@ -216,7 +208,7 @@
             android:name="com.mintegral.msdk.reward.player.MTGRewardVideoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-        <!-- mobvista -->
+        <!-- mintegral -->
 
         <!-- unity -->
         <!-- 2.2.1 -->
