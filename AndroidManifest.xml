@@ -52,6 +52,10 @@
         
         <!-- admob -->
         <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-0000000000000000~0000000000" />
+        
+        <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
@@ -94,62 +98,7 @@
             android:name="com.up.ads.adapter.interstitial.inner.UPInnerInterstitialAdActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
-        <activity
-            android:name="com.up.ads.adapter.exit.inner.single.UPInnerSingleExitAdActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
-        <activity
-            android:name="com.up.ads.adapter.exit.inner.list.UPInnerListExitAdActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
-        <activity
-            android:name="com.up.ads.adapter.exit.inner.UPAppsAdsActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
         <!-- 广告SDK -->
-
-        <!-- 兼容3003以下的 sdk -->
-        <activity
-            android:name="com.avidly.ads.wrapper.interstitial.AvidlyInterstitialDialogActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@style/UpDialogStyle" />
-        <activity
-            android:name="com.avidly.ads.debug.AvidlyRewardVideoDebugActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:launchMode="singleTop"
-            android:theme="@android:style/Theme.Light.NoTitleBar">
-            <intent-filter>
-                <action android:name="com.avidly.ads.debug.video.activity" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.avidly.ads.debug.AvidlyInterstitialDebugActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:launchMode="singleTop"
-            android:theme="@android:style/Theme.Light.NoTitleBar">
-            <intent-filter>
-                <action android:name="com.avidly.ads.debug.inter.activity" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.avidly.ads.adapter.interstitial.inner.InnerInterstitialAdActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
-        <activity
-            android:name="com.avidly.ads.adapter.exit.inner.single.InnerSingleExitAdActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
-        <activity
-            android:name="com.avidly.ads.adapter.exit.inner.list.InnerListExitAdActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
-        <activity
-            android:name="com.avidly.ads.adapter.exit.inner.AppsAdsActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
-        <!-- 兼容3003以下的 sdk -->
 
         <!-- facebook -->
         <activity
@@ -279,7 +228,7 @@
 
         <!-- playable -->
         <activity
-            android:name="com.avidly.playablead.scene.view.AvidlyPlayableActivity"
+            android:name="com.sw.playablead.scene.view.PlayableActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:launchMode="singleTask"
             android:theme="@style/PlayableAdTranslucentStyle" />
@@ -383,7 +332,7 @@
         
         <!-- sigmob -->
         <provider
-            android:name="com.up.sigmob_ads.SigmobFileProvider"
+            android:name="com.sigmob.sdk.SigmobFileProvider"
             android:authorities="adam.lean.inland.sigprovider"
             android:exported="false"
             android:grantUriPermissions="true">
@@ -396,6 +345,7 @@
             android:name="com.sigmob.sdk.base.common.AdActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
         <!-- sigmob -->
+        
     </application>
 
 </manifest>
